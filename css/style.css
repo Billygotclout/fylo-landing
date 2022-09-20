@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+.center {
+  text-align: center;
+}
+header {
+  padding: 1rem 0 3rem 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+}
+nav .brand {
+  width: 40%;
+  display: flex;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  margin-left: 2rem;
+  white-space: nowrap;
+}
+
+.section-1 {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 2rem;
+}
+.section-1 img {
+  width: min(100%, 500px);
+  height: auto;
+}
+.section-1 h3 {
+  font-weight: 700;
+}
+.s1 {
+  margin-top: 0.5rem;
+  color: hsl(243, 87%, 12%);
+}
+.input-field {
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.input-field input {
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 10px 1px hsl(0, 0%, 75%);
+  border-radius: 4px;
+}
+
+.input-field .btn {
+  padding: 12px;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  box-shadow: 1px 1px 1px 1px hsl(0, 0%, 75%);
+}
+
+.section-2 {
+  background-color: hsl(240, 75%, 98%);
+  padding: 2rem;
+}
+.section-2 .bg {
+  width: min(100%, 500px);
+  height: auto;
+  margin-bottom: 20px;
+  background-image: url("/images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+}
+.section-2 h3 {
+  color: hsl(243, 87%, 12%);
+}
+
+.pad {
+  margin-top: 1rem;
+}
+.how {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.card {
+  margin: 2rem 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+max-width: 375px;
+  box-shadow: 1px 1px 10px 1px hsl(0, 0%, 75%);
+}
+.card .quote {
+  width: 20px;
+  height: auto;
+}
+
+.card .user-container {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+.card .user-container img {
+  margin-right: 10px;
+  border-radius: 50%;
+
+  width: min(100%, 50px);
+  height: auto;
+}
+
+.section-3 {
+  background-color: hsl(238, 22%, 44%);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+.section-3 .input-field-2 {
+  display: flex;
+  flex-direction: column;
+}
+.input-field-2 input {
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: none;
+
+  border-radius: 4px;
+}
+.input-field-2 .btn {
+  padding: 12px;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+}
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  padding: 2rem;
+}
+.footer img {
+  filter: brightness(0) invert(1);
+}
+.footer p {
+  line-height: 1.75rem;
+}
+.footer p img {
+  margin-right: 5px;
+}
+.footer a {
+  color: #fff;
+  line-height: 1.75rem;
+}
+.footer .social {
+  text-align: center;
+}
+
+.circle {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  border-color: white;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .section-2 .bg {
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 994px) {
+  .section-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .input-field {
+    flex-direction: row;
+    width: 100%;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .section-3 {
+    display: flex;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
